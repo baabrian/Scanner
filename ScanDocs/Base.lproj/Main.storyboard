@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScanDocs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k74-Np-hRd">
+                                <rect key="frame" x="16" y="48" width="343" height="456"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="456" id="QwS-X4-JpD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ai-bM-GK3">
+                                <rect key="frame" x="112" y="522" width="150" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="Lha-Av-eOu"/>
+                                    <constraint firstAttribute="width" constant="150" id="LoE-Mi-0fU"/>
+                                    <constraint firstAttribute="width" secondItem="0ai-bM-GK3" secondAttribute="height" multiplier="75:49" id="mnP-Vc-UIQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="takephotoBlue"/>
+                                <connections>
+                                    <action selector="takePhotoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YyY-qT-BhW"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ew3-t3-aji">
+                                <rect key="frame" x="177" y="628" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ew3-t3-aji" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="0co-7D-j3I"/>
+                            <constraint firstItem="k74-Np-hRd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="E44-kd-keY"/>
+                            <constraint firstItem="k74-Np-hRd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EAw-Vp-58p"/>
+                            <constraint firstItem="ew3-t3-aji" firstAttribute="top" secondItem="0ai-bM-GK3" secondAttribute="bottom" constant="8" id="JXp-9c-MK5"/>
+                            <constraint firstItem="k74-Np-hRd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5K-kF-IsV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ai-bM-GK3" secondAttribute="trailing" constant="113" id="Re8-yq-y7b"/>
+                            <constraint firstItem="0ai-bM-GK3" firstAttribute="top" secondItem="k74-Np-hRd" secondAttribute="bottom" constant="18" id="SA7-rk-Fas"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ew3-t3-aji" secondAttribute="trailing" constant="178" id="X24-m6-zHw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k74-Np-hRd" secondAttribute="trailing" constant="16" id="fgu-Z1-ZEy"/>
+                            <constraint firstItem="0ai-bM-GK3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="p1n-qQ-bhM"/>
+                            <constraint firstItem="0ai-bM-GK3" firstAttribute="centerX" secondItem="k74-Np-hRd" secondAttribute="centerX" id="t5n-3J-bWT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ew3-t3-aji" id="DtN-tB-afX"/>
+                        <outlet property="textView" destination="k74-Np-hRd" id="nCT-EY-Fmg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="takephotoBlue" width="452" height="296"/>
+    </resources>
+</document>
