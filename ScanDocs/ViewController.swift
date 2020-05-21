@@ -87,7 +87,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
         //imagePickerController(
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+            let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
 
             if let selectedImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
                 
