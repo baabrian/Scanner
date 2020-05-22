@@ -2,6 +2,7 @@ Scanner Single Page iOS Application
 Teammates: Brian Nguyen
 
 Dependencies used: TesseractOCR 
+
 Functionalities: Converts an image into text. Allows the user to edit the text document. 
 
 Description: 
