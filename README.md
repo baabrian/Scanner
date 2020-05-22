@@ -1,4 +1,5 @@
 Scanner Single Page iOS Application
+
 Teammates: Brian Nguyen
 
 Dependencies used: TesseractOCR 
