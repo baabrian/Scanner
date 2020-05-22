@@ -108,8 +108,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func recognizeText(image: UIImage) {
         if let tessaract = G8Tesseract(language: "eng") {
         tessaract.engineMode = .tesseractCubeCombined
-        tessaract.pageSegmentationMode = .auto //for paragraphs
-        tessaract.image = image.g8_blackAndWhite() //turns to B/w
+        tessaract.pageSegmentationMode = .auto 
+        tessaract.image = image.g8_blackAndWhite() 
         tessaract.recognize()
         textView.text = tessaract.recognizedText
             
